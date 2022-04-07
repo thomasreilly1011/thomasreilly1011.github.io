@@ -8,8 +8,9 @@
 		</form>
 	</body>
 	<script>
+		console.log(document.cookie);
 		var csrf = document.querySelector('meta[name="token"]').content;
-		print(csrf)
+		console.log(csrf)
 		document.getElementById('csrfToken').value = csrf
 	</script>
 </html>
